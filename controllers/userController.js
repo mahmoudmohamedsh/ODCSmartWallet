@@ -110,7 +110,7 @@ exports.signin = (req,res,next)=>{
             throw error;
         }
         loadedUser = user;
-        return bcrypt.compare(password,user.password);
+        return bcrypt.compare(password.toString(),user.password);
     })
     .then(isEqual => {
         if(!isEqual){
