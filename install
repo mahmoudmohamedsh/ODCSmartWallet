@@ -1,0 +1,3 @@
+npm install --save express dotenv body-parser mongoose express-validator multer bcrypt jsonwebtoken axios otp-generator 
+
+npm install --save-dev nodemon
